@@ -15,6 +15,26 @@
         </div>
     </div>
 
-    <!-- TODO: CRIAR UM FOREACH QUE EXIBA OS SERVICOS QUE VEM DA CONTROLLER AQUI -->
+    <div class="row">
+
+    @foreach($servicos as $servico)
+      <div class="col-xs-3">
+
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">
+            {{ $servico['nome'] }}
+          </div>
+
+          <div class="panel-body" style="height: 70px;">
+            {{ $servico['descricao'] }}
+          </div>
+
+        </div>
+      </div>
+    @endforeach
+
+    </div>
+
 
 @endsection

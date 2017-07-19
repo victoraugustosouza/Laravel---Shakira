@@ -96,23 +96,11 @@
                     <ul class="nav navbar-nav">
                         <li><a href="{{ route('welcome') }}">Welcome</a></li>
                         <li><a href="{{ route('contato') }}">Contato</a></li>
+                        <li><a href="{{ route('servicos') }}">Serviços</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-
-        <div class="flex-center position-ref">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-        </div>
 
         <!-- criando nossa sessao 'corpo' para poder, aqui, colocar nosso codigo em outras views -->
         @yield('corpo')

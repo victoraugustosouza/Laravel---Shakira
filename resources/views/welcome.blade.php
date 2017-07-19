@@ -5,13 +5,10 @@
 @section('corpo')
 
     <div class="row">
-        <div class="col-xs-6 col-xs-offset-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Bem vindo!</div>
-                <div class="panel-body">
-                    Você está na home.
-                </div>
-            </div>
+        <div class="col-xs-12">
+            <center>
+              <h1 style="font-size: 60px; font-family: Lato;"> Bem-vindo! </h1>
+            </center>
         </div>
     </div>
 

@@ -19,3 +19,10 @@ Route::get('/contato', 'ContatoController@index')->name('contato');
 
 //Rota para enviar contato que esta na view de contato
 Route::post('/contato', 'ContatoController@enviarContato')->name('enviar_contato');
+
+//Rota para servir a pagina servicos
+Route::get('/servicos', 'ServicosController@index')->name('servicos');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

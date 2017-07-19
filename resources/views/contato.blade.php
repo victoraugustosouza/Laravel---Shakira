@@ -36,22 +36,23 @@
                 {{ csrf_field() }}
 
                 <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" class="form-control" name="nome">
+                </div>
+
+                <div class="form-group">
                     <label for="email">E-mail</label>
                     <input id="email" type="email" class="form-control" name="email">
                 </div>
 
                 <div class="form-group">
-                    <label for="nome">Password</label>
-                    <input id="nome" type="text" class="form-control" name="nome">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
+                    <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
                 </div>
 
 
-                <button type="submit" class="btn btn-default">enviar</button>
+                <button type="submit" class="btn btn-default">Enviar</button>
+                <br><br>
 
             </form>
 
