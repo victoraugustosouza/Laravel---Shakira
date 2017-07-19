@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Rota para servir a pagina welcome
+Route::get('/', 'WelcomeController@index')->name('welcome');
+
+//Rota para servir a pagina contato
+Route::get('/contato', 'ContatoController@index')->name('contato');
+
+//Rota para enviar contato que esta na view de contato
+Route::post('/contato', 'ContatoController@enviarContato')->name('enviar_contato');
