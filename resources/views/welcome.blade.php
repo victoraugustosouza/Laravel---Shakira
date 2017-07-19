@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-xs-12">
             <center>
-              <h1 style="font-size: 60px; font-family: Lato;"> Bem-vindo! </h1>
+              <h1> Bem-vindo! </h1>
             </center>
         </div>
     </div>
