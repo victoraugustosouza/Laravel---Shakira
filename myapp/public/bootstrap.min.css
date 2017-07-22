@@ -1,0 +1,101 @@
+
+.navbar-brand>img {
+    display: block;
+    width: 140px;
+    margin-top: -22px;
+    
+}
+.wrap img{
+    z-index: -1;
+}
+
+.wrap img:hover{
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.carousel-inner img:hover{
+      -webkit-transform:scale(1.1);
+       -moz-transform:scale(1.25); /* Firefox */
+}
+
+#t1{    
+    margin:auto;
+}
+#c1{
+    background-image: url("/public/img/principal.jpg");
+    background-color:black;
+    width: 1233px;
+    height: 693.22px;
+    text-align: center;
+
+
+}
+#Personagens{
+    background-image: url("img/principal2.jpg");
+    background-color:black;
+    width: 1233px;
+    height: 693.22px;
+    vertical-align: middle;
+    text-align: center;
+}
+#Personagens:hover{
+    transition: 0.7s;
+    background-image: url("img/principal22.jpg");
+}
+
+#Temporadas{
+    background-image: url("img/principal3.jpg");
+    background-color:black;
+    width: 1233px;
+    height: 693.22px;
+
+}
+#Temporadas:hover{
+    background-image: url("img/principal33.jpg");
+    transition: 0.7s;
+
+}
+#Frases{
+    background-image: url("img/principal1.jpg");
+    background-color:black;
+    width: 1233px;
+    height: 693.22px;
+
+}
+
+#Frases:hover {
+    background-image: url("img/principal11.jpg");
+    transition: 0.7s;
+
+
+}
+#child1{
+    line-height: 300px;
+    font-size: 30px;
+font-family: 'Patua One', cursive;
+
+
+}
+#child{
+    line-height: 270px;
+    font-size: 80px;
+    font-family: 'GNUTypewriterStandard'; 
+
+}
+#child2{
+    font-size: 100px;
+    font-family: 'GNUTypewriterStandard'; 
+    color: white;
+    vertical-align: middle;
+
+}
+#child3{
+    font-size: 55px;
+    font-family: 'GNUTypewriterStandard'; 
+    color: white;
+    vertical-align: middle;
+
+}
+
+
