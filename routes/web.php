@@ -11,18 +11,14 @@
 |
 */
 
-//Rota para servir a pagina welcome
-Route::get('/', 'WelcomeController@index')->name('welcome');
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
-//Rota para servir a pagina contato
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/sobre', 'SobreController@index')->name('sobre');
 Route::get('/contato', 'ContatoController@index')->name('contato');
+Route::put('/contato/{id}', 'ContatoController@enviarContato')->name('enviar_contato');
 
-//Rota para enviar contato que esta na view de contato
-Route::post('/contato', 'ContatoController@enviarContato')->name('enviar_contato');
 
-//Rota para servir a pagina servicos
-Route::get('/servicos', 'ServicosController@index')->name('servicos');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
